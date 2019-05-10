@@ -15,7 +15,7 @@
 <body>
                 <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
                   <!-- <div class="container"> -->
-                    <a href="index_web.html" class="navbar-brand">LATITUDE</a>
+                    <a href="index.html" class="navbar-brand">LATITUDE</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,26 +56,14 @@
     <!--Main Grid-->
     <div class= "container">
         <div class= "row">
-            <div class="col-lg-8 col-md-12">
-                <div class= "main-box">
-                <h1 class= "main-pg-header">Summary: Latitude vs. X</h1>
+            <!-- <div class="col-lg-8 col-md-12"> -->
+                <div class= "box">
+                <h1 class= "main-pg-header">Comparison: Latitude vs. X</h1>
+                <h2 class="main-pg-header">Click on the graph to view more information</h2>
                 <hr>
-                <div class= "summary txt">
-                    <img id= "main-img" style="width: 75%; display: block;"  src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true", alt= "Temp vs Latitude" >
-                    <hr class="my-4">
-                    <p class="lead">
-                        The purpose of this project was to analyze how weather changes as you get closer to the equator.  
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  
-                    </p>
-                    
-                    <p class="lead"> After assembling the dataset, we used Matplotlib, to plot various aspects of the weather vs. latitude.  
-                            Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the sourced
-                            data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
-                        </p>
-                </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-12">
                 <div class="box">
                       <div class="card mb-5">
                         <h3 class="card-header">Visualizations </h3>
@@ -87,32 +75,32 @@
                 </div>
                 <div class="container">
                     <div class="row" style="padding-bottom: 30px;">
-               <div class="col-6">
-                <a href= "temperature.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true"alt="Temp vs. Latitude Scatterplt"></a>
+                        <div class="col-lg-6">
+                <a href= "temperature.html"><img style="width: 100%; display: block;" src="https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true"alt="vs. Max Temperature"></a>
                 <div class="card-body">
                <hr>
                <p class="text-muted">Latitude vs. Temperature</p>
                </div>
               </div>
-               <div class="col-6">
-               <a href= "humidity.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true"alt="Humidity vs. Latitude Scatterplt"></a>
+               <div class="col-lg-6" style="padding-bottom: 30px;">
+               <a href= "humidity.html"><img style="width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true"alt="vs. Humidity"></a>
                 <div class="card-body">
                <hr>
                <p class="text-muted">Latitude vs. Humidity</p>
                </div>
                </div>
-               <div class="col-6">
-               <a href= "cloudiness.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_cloudiness_scatter.png?raw=true"alt="Cloudiness vs. Latitude Scatterplt"></a>
+               <div class="col-lg-6" style="padding-bottom: 30px;">
+               <a href= "cloudiness.html"><img style="width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_cloudiness_scatter.png?raw=true"alt="Cloudiness vs. Latitude Scatterplt"></a>
                 <div class="card-body">
                <hr>
                <p class="text-muted">Latitude vs. Cloudiness</p>
                </div>
                </div>
-               <div class="col-6">
-               <a href= "wind.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true"alt="Wind Speed  vs. Latitude Scatterplt"></a>
+               <div class="col-lg-6" style="padding-bottom: 30px;">
+               <a href= "wind.html"><img style="width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true"alt="Wind Speed  vs. Latitude Scatterplt"></a>
                <div class="card-body">
                   <hr>
-                  <p class="text-muted">Latitude vs. Wind Speed</p>
+                  <h7 class="card-subtitle text-muted">Latitude vs. Wind Speed</h7>
                   </div>
               </div>
             </div>

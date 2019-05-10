@@ -24,6 +24,8 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
                           <div class="dropdown-menu" aria-labelledby="themes">
+                            <a class="dropdown-item" href="../plotsall/">All</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="temperature.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
@@ -58,24 +60,18 @@
         <div class= "row">
             <div class="col-lg-8 col-md-12">
                 <div class= "main-box">
-                <h1 class= "main-pg-header">Summary: Latitude vs. X</h1>
+                <h1 class= "main-pg-header">Wind Speed vs Latitude</h1>
                 <hr>
                 <div class= "summary txt">
-                    <img id= "main-img" style="width: 75%; display: block;"  src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true", alt= "Temp vs Latitude" >
+                    <img id= "main-img" style="height: 500px; width: 100%;display: block;" src= "https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true", alt= "Cloudiness vs Latitude">
                     <hr class="my-4">
                     <p class="lead">
-                        The purpose of this project was to analyze how weather changes as you get closer to the equator.  
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  
-                    </p>
-                    
-                    <p class="lead"> After assembling the dataset, we used Matplotlib, to plot various aspects of the weather vs. latitude.  
-                            Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the sourced
-                            data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
-                        </p>
-                </div>
+                            Wind speed appears to slightly increase as we move away from the equator. However, to conclusively describe a pattern, we would need to go beyond the range in data to reach cities at 
+                            closer to the poles. Only then can we have a sample large to confirm the pattern.                </p>
+                        </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-16">
                 <div class="box">
                       <div class="card mb-5">
                         <h3 class="card-header">Visualizations </h3>
@@ -112,7 +108,7 @@
                <a href= "wind.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true"alt="Wind Speed  vs. Latitude Scatterplt"></a>
                <div class="card-body">
                   <hr>
-                  <p class="text-muted">Latitude vs. Wind Speed</p>
+                  <h7 class="card-subtitle text-muted">Latitude vs. Wind Speed</h7>
                   </div>
               </div>
             </div>
