@@ -1,134 +1,135 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Data Visualization Dashboard</title>
-    <link rel="stylesheet" href="bootstrap.css" media="screen">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    
-</head>
-<body>
-                <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-                  <!-- <div class="container"> -->
-                    <a href="index.html" class="navbar-brand">LATITUDE</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
-                          <div class="dropdown-menu" aria-labelledby="themes">
-                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="comparison.html">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="data.html">Data</a>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                        <div class="bs-component">
-                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                          </nav>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <title>Latitude</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <link rel="stylesheet" href="bootstrap.css" media="screen">
+                <link rel="stylesheet" href="../_assets/css/custom.min.css">
+                <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>
+            
+                 var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-23019901-1']);
+                  _gaq.push(['_setDomainName', "bootswatch.com"]);
+                    _gaq.push(['_setAllowLinker', true]);
+                  _gaq.push(['_trackPageview']);
+            
+                 (function() {
+                   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                 })();
+            
+                </script>
+              <script id="_carbonads_projs" type="text/javascript" src="https://srv.carbonads.net/ads/CKYIE23N.json?segment=placement:bootswatchcom&amp;callback=_carbonads_go"></script>
+            </head>
+      <body>
+          <!-- Collect the nav links, and other content for toggling -->
+          
+          <body>
+                <!--Nav Bar-->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         </div>
+                
+                        <!-- Collect the nav links, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <!--left nav link-->
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="index.html">LATITUDE
+                                        <!-- <span class="sr-only">(current)</span> -->
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--Right nav link-->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="temperature.html">Max Temperature</a>
+                                        </li>
+                                        <li>
+                                            <a href="humidity.html">Humidity</a>
+                                        </li>
+                                        <li>
+                                            <a href="cloudiness.html">Cloudiness</a>
+                                        </li>
+                                        <li>
+                                            <a href="wind.html">Wind Speed</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="comparison.html">Comparison</a>
+                                </li>
+                                <li>
+                                    <a href="data.html">Data</a>
+                                </li>
             
-            
-                      </div>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-                  </div>
+                    <!-- /.container-fluid -->
+                </nav>
             
-    <!--Main Grid-->
-    <div class= "container">
-        <div class= "row">
-            <div class="col-lg-8 col-md-12">
-                <div class= "main-box">
-                <h1 class= "main-pg-header">Humidity vs Latitude</h1>
-                <hr>
-                <div class= "summary txt">
-                    <img id= "main-img" style="height: 500px; width: 100%;display: block;" src= "https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true", alt= "Humidity vs Latitude">
-                    <hr class="my-4">
-                    <p class="lead">
-                            Humidity does not show a strong correlation to latitude. The visualization shows a great variety of humidity percentages at different latitudes. 
-                            Therefore, we cannot conclude that there is a conclusive pattern between humidity and latitude.                </p>
- 
+                <!--Main Grid-->
+                <div class= "container">
+                    <div class= "row">
+                        <div class= "col-md-7">
+                            <div class= "main-box">
+                            <h1 class= "main-pg-header">Summary: Latitude vs. X</h1>
+                            <hr>
+                            <div class= "summary txt">
+                                <img id= "main-img" src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true", alt= "Temp vs Latitude">
+                                <p>
+                                    The purpose of this project was to analyze how weather changes as you get closer to the equator.  
+                                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  
+                                    After assembling the dataset, we used Matplotlib, to plot various aspects of the weather vs. latitude.  
+                                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the sourced
+                                    data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class= "col-md-5">
+                            <div class= "side-box">
+                            <h2 class= "main-pg-subheader">Visualizations</h2>
+                            <hr>
+                            <div class= "sidebar">
+                                <a href= "temperature.html"><img id= "side-img1" src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true", alt= "Temp vs. Latitude Scatterplt"></a>
+                                <a href= "humidity.html"><img id= "side-img2" src= "https://raw.githubusercontent.com/Priyarag/Python-APIs/master/lat_vs_humidity_scatter.png?raw=true", alt= "Humidity vs. Latitude Scatterplt"></a>
+                                <a href= "cloudiness.html"><img id= "side-img3" src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_cloudiness_scatter.png?raw=true", alt= "Cloudiness vs. Latitude Scatterplt"></a>
+                                <a href= "wind.html"><img id= "side-img4" src= "https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_windspeed_scatter.png?raw=true", alt= "Wind Speed vs. Latitude Scatterplt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            
+                <!--Footer-->
+                <div class= "container-fluid bottom-footer page-footer">
+                    <div class= "row">
+                        <div class= "col text-center"
+                        <p id= "footer-txt">
+                            &copy; Copyright Coding Bootcamp 2019
+                        </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="box">
-                      <div class="card mb-5">
-                        <h3 class="card-header">Visualizations </h3>
-                        <div class="card-body">
-                            
-                            
-                          <h5 class="card-title">Comparisons</h5>
-                          <!-- <h6 class="card-subtitle text-muted">Temp vs. Latitude</h6> -->
-                </div>
-                <div class="container">
-                    <div class="row" style="padding-bottom: 30px;">
-               <div class="col-6">
-                <a href= "temperature.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true"alt="Temp vs. Latitude Scatterplt"></a>
-                <div class="card-body">
-               <hr>
-               <p class="text-muted">Latitude vs. Temperature</p>
-               </div>
-              </div>
-               <div class="col-6">
-               <a href= "humidity.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true"alt="Humidity vs. Latitude Scatterplt"></a>
-                <div class="card-body">
-               <hr>
-               <p class="text-muted">Latitude vs. Humidity</p>
-               </div>
-               </div>
-               <div class="col-6">
-               <a href= "cloudiness.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_cloudiness_scatter.png?raw=true"alt="Cloudiness vs. Latitude Scatterplt"></a>
-                <div class="card-body">
-               <hr>
-               <p class="text-muted">Latitude vs. Cloudiness</p>
-               </div>
-               </div>
-               <div class="col-6">
-               <a href= "wind.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true"alt="Wind Speed  vs. Latitude Scatterplt"></a>
-               <div class="card-body">
-                  <hr>
-                  <h7 class="card-subtitle text-muted">Latitude vs. Wind Speed</h7>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-    <!--Footer-->
-    <footer>
-    <div class= "container-fluid bottom-footer page-footer">
-        <div class= "row">
-            <div class= "col text-center"
-            <p id= "footer-txt">
-                &copy; Copyright Coding Bootcamp 2019
-            </p>
-            </div>
-        </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+            
+            </body>
+            </html>
