@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+</head>
+<body>
+                <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                  <!-- <div class="container"> -->
+                    <a href="index.html" class="navbar-brand">LATITUDE</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
+                          <div class="dropdown-menu" aria-labelledby="themes">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="data.html">Data</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                        <div class="bs-component">
+                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                          </nav>
+                        </div>
+            
+            
+                      </div>
+                    </div>
+                  </div>
+            
+    <!--Main Grid-->
+    <div class= "container">
+        <div class= "row">
+            <div class="col-lg-8 col-md-12">
+                <div class= "main-box">
+                <h1 class= "main-pg-header">Humidity vs Latitude</h1>
+                <hr>
+                <div class= "summary txt">
+                    <img id= "main-img" style="height: 500px; width: 100%;display: block;" src= "https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true", alt= "Humidity vs Latitude">
+                    <hr class="my-4">
+                    <p class="lead">
+                            Humidity does not show a strong correlation to latitude. The visualization shows a great variety of humidity percentages at different latitudes. 
+                            Therefore, we cannot conclude that there is a conclusive pattern between humidity and latitude.                </p>
+ 
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="box">
+                      <div class="card mb-5">
+                        <h3 class="card-header">Visualizations </h3>
+                        <div class="card-body">
+                            
+                            
+                          <h5 class="card-title">Comparisons</h5>
+                          <!-- <h6 class="card-subtitle text-muted">Temp vs. Latitude</h6> -->
+                </div>
+                <div class="container">
+                    <div class="row" style="padding-bottom: 30px;">
+               <div class="col-6">
+                <a href= "temperature.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/Python-APIs/blob/master/lat_vs_max_temperature_scatter.png?raw=true"alt="Temp vs. Latitude Scatterplt"></a>
+                <div class="card-body">
+               <hr>
+               <p class="text-muted">Latitude vs. Temperature</p>
+               </div>
+              </div>
+               <div class="col-6">
+               <a href= "humidity.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_humidity_scatter.png?raw=true"alt="Humidity vs. Latitude Scatterplt"></a>
+                <div class="card-body">
+               <hr>
+               <p class="text-muted">Latitude vs. Humidity</p>
+               </div>
+               </div>
+               <div class="col-6">
+               <a href= "cloudiness.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_cloudiness_scatter.png?raw=true"alt="Cloudiness vs. Latitude Scatterplt"></a>
+                <div class="card-body">
+               <hr>
+               <p class="text-muted">Latitude vs. Cloudiness</p>
+               </div>
+               </div>
+               <div class="col-6">
+               <a href= "wind.html"><img style="height: 100px; width: 100%; display: block;" src="https://github.com/Priyarag/bootstrap_GP/blob/master/lat_vs_windspeed_scatter.png?raw=true"alt="Wind Speed  vs. Latitude Scatterplt"></a>
+               <div class="card-body">
+                  <hr>
+                  <h7 class="card-subtitle text-muted">Latitude vs. Wind Speed</h7>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <!--Footer-->
+    <footer>
+    <div class= "container-fluid bottom-footer page-footer">
+        <div class= "row">
+            <div class= "col text-center"
+            <p id= "footer-txt">
+                &copy; Copyright Coding Bootcamp 2019
+            </p>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
